@@ -129,8 +129,13 @@ img {
 }
     .header h1 {
     display: flex;
-    justify-content: center;
-    gap: 25px;
+    justify-items: center;
+    gap: 2px;
+}
+.header {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
 }
 
     .detail-section h2 {
