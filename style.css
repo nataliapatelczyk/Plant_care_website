@@ -80,7 +80,7 @@ img {
 }
 
 .details-container {
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -88,22 +88,78 @@ img {
     padding: 60px 0;
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
-
-.species-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.detail-section h2 {
+    font-size: 30px;
 }
+.species-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 35px;
+}
+    h2 {
+        font-size: 20px;
+}
+    p {
+        font-size: 30px; 
+}
+    .species-grid {
+        grid-template-columns: 1fr;
+}
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        width: 95%;
+        margin: 0 auto;
+}
+    .plant {
+        border-radius: 25px;
+        background-color: rgba(105, 114, 85, 0.429);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        text-align: center;
+        width: 140px;
+}
+    .header h1 {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+    .detail-section h2 {
+        font-size: 30px;
+        text-align: center;
+}
+    .species-card h3 {
+        font-size: 25px;
+        text-align: center;
+}
+    .species-card p {
+        font-size: 20px;
+        text-align: center;
+}
+
+}
+
 
 .species-card {
     background: rgba(255, 255, 255, 0.05);
     padding: 20px;
     border-radius: 20px;
     border-left: 5px solid #697255;
-    min-width: 40%;
-    margin: 20px;
+    margin-bottom: 20px;
 }
-
+.species-card h3 {
+    font-size: 25px;
+    text-align: center;
+}
 .back-link {
     display: inline-block;
     margin-top: 20px;
